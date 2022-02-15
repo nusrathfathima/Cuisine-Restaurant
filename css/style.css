@@ -113,7 +113,7 @@ main ul li {
   width:100%; */
 }
 
-article{
+article {
   width: 50%;
   margin: 0 auto;
   padding: 5% 0;
@@ -155,6 +155,65 @@ button span {
   border-radius: 0 5px 5px 0;
   background-color: #FFAA4D;
 }
+
+/* Second Section Styling */
+
+.section2 {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F2F6F7;
+  padding: 5% 0;
+}
+
+.section2 h4 {
+  color: #FF8800;
+}
+
+.section2 h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 2% 0;
+}
+
+.speciality ul li {
+  display: inline;
+  padding: 1% 2%;
+  border-bottom: 2px solid #DBDEDF;
+}
+
+.speciality ul > li:first-child{
+  color: #FF8800;
+  border-bottom: 2px solid #FF8800;
+}
+
+.section2-under-section2{
+  padding-top: 2%;
+}
+
+.section-with-images {
+  padding-top: 2%;
+}
+
+.section-with-images li {
+  display: inline;
+  padding: 1% 1%;
+}
+
+.container-with-image {
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  left: 0;
+  /* top: 0; */
+}
+
+
+
 
 footer {
 
