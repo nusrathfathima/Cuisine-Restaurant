@@ -1,0 +1,177 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  /* background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background-image: url('../images/maincuisine.jpg');
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  padding: 1% 5%;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+}
+
+main  {
+  margin: 5% 10%;
+}
+
+main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 4rem;
+  padding-bottom: 5%;
+  width: 30%;
+
+}
+
+main input {
+  padding:10px 5px;
+  width: 30%;
+}
+
+main a button {
+  background-color: #FF8800;
+  color: white;
+  border: 1px solid #FF8800;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+main ul {
+  margin-top: 5%;
+}
+
+main ul li {
+  float: left;
+  padding-right: 5%;
+}
+
+.fa-brands{
+  color: #FF8800;
+}
+
+
+/* First Section Styling */
+
+.section1 {
+  background-image: url('../images/section2-background.jpg');
+  height: 820px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  /* background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  height:600px;
+  width:100%; */
+}
+
+article{
+  width: 50%;
+  margin: 0 auto;
+  padding: 5% 0;
+  padding-left: 15%;
+}
+
+article * {
+  padding-bottom: 5%;
+
+}
+
+article h4 {
+  color: #FF8800;
+}
+
+article h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+  font-weight: bold;
+  width: 70%;
+}
+
+article p {
+  line-height: 1.5em;
+}
+
+article button {
+  background-color: #FF8800;
+  color: white;
+  border: 1px solid #FF8800;
+  padding: 10px;
+  padding-right: 0;
+  border-radius: 5px;
+}
+
+button span {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 0 5px 5px 0;
+  background-color: #FFAA4D;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media all and (max-width: 800px) {
+  header nav ul {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 500px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
